@@ -15,7 +15,6 @@ sudo mv jdk-21+35 /opt/
 echo "[INFO] Configurando JAVA_HOME y PATH..."
 echo "export JAVA_HOME=/opt/jdk-21+35" >> ~/.bash_profile
 echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bash_profile
-source ~/.bash_profile
 
 # 4. Crear la carpeta para Minecraft y entrar en ella
 echo "[INFO] Creando carpeta ~/minecraft-server"
@@ -46,3 +45,5 @@ rm -f OpenJDK21U-jdk_x64_linux_hotspot_21_35.tar.gz
 
 echo "[INFO] Instalación completa."
 echo "Usa './run.sh' dentro de ~/minecraft-server para iniciar el servidor."
+
+source ~/.bash_profile
