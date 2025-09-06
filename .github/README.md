@@ -16,8 +16,8 @@ Para este taller, necesitas:
 1. **Clonar el repositorio**  
     Clona el repositorio en tu instancia EC2 o máquina local:
     ```bash
-    git clone https://github.com/<tu-repo>/lab-to-cloud.git
-    cd lab-to-cloud
+    git clone https://github.com/OswiFUribe/AWSCraft.git
+    cd AWSCraft
     ```
 
 2. **Configurar la instancia EC2**  
