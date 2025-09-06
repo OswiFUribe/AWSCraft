@@ -1,7 +1,7 @@
 name: CD - Empaque y Subida de Artifact
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
