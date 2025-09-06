@@ -17,19 +17,11 @@ Para este taller, necesitas:
 ### Pasos de Instalación y Configuración
 
 1. **Clonar el repositorio**  
-<<<<<<< HEAD
 Clona el repositorio en tu instancia EC2 o máquina local:
 ```bash
 git clone https://github.com/OswiFUribe/AWSCraft
 cd AWSCraft
 ```
-=======
-    Clona el repositorio en tu instancia EC2 o máquina local:
-    ```bash
-    git clone https://github.com/OswiFUribe/AWSCraft.git
-    cd AWSCraft
-    ```
->>>>>>> dc267ecd39fdf016e3ddaa6fc12d60780629b0b5
 
 2. **Configurar la instancia EC2**  
 ### Seleccionar una instancia EC2
