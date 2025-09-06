@@ -72,6 +72,7 @@ Para obtener más información sobre Elastic IPs, consulta la [documentación de
 2. **Clonar el repositorio**  
 Clona el repositorio en tu instancia EC2 o máquina local:
 ```bash
+sudo yum install -y git
 git clone https://github.com/OswiFUribe/AWSCraft
 cd AWSCraft
 ```
