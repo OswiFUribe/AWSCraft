@@ -92,7 +92,7 @@ cd ~/minecraft-server
 ```
 El servidor debería iniciarse y estar listo para aceptar conexiones.
 
-> [!note]Nota:
+> [!NOTE]Nota:
 > - Este archivo está adaptado para la versión actual de Minecraft (1.21.8) y su versión de Fabric correspondiente. Si en el futuro hay nuevas versiones, es posible que necesites actualizar las URLs de descarga en el script `install_minecraft.sh`, para ello, puedes referirte al siguiente [archivo](setup/README.md) para más detalles.
 
 5. **Verificar el servidor**  
