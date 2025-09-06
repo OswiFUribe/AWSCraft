@@ -24,7 +24,7 @@ cd AWSCraft
 ```
 
 2. **Configurar la instancia EC2**  
-### Seleccionar una instancia EC2
+#### Seleccionar una instancia EC2
 
 Cuando crees una instancia EC2 en AWS, elige el tipo de instancia que mejor se ajuste a tus necesidades. Aquí tienes una guía rápida para seleccionar la instancia adecuada para este taller, considerando tamaño, precio y uso de recursos.
 
