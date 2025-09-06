@@ -88,7 +88,7 @@ chmod +x install_minecraft.sh
 4. **Iniciar el servidor de Minecraft**  
 Navega a la carpeta `minecraft-server` y ejecuta el servidor con el siguiente comando:
 ```bash
-cd ~/minecraft-server
+cd minecraft-server/
 ./run.sh
 ```
 El servidor debería iniciarse y estar listo para aceptar conexiones.
