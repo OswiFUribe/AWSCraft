@@ -45,7 +45,7 @@ A continuación, se muestran las instancias más recomendadas para levantar tu s
 **Recomendación:**  
 Para este taller, utiliza la instancia **t3.small**. Si necesitas mayor rendimiento (más jugadores o mods), puedes optar por **t3.medium** o **t3.large**.
 
-> [!note]Nota:
+> [!NOTE]
 > - Si solo necesitas probar el servidor para pocos jugadores, la **t3.micro** puede ser suficiente.  
 > - Las instancias **t3** son de uso general y adecuadas para aplicaciones como Minecraft.
 
