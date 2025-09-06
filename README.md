@@ -17,7 +17,7 @@ Para este taller, necesitas:
     Clona el repositorio en tu instancia EC2 o máquina local:
     ```bash
     git clone https://github.com/OswiFUribe/AWSCraft.git
-cd AWSCraft
+    cd AWSCraft
     ```
 
 2. **Configurar la instancia EC2**  
