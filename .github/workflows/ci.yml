@@ -1,0 +1,33 @@
+name: CI - Validaciones Básicas
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Verificar cambios en README.md
+        run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q "README.md"; then
+            echo "README.md ha sido modificado correctamente."
+          else
+            echo "Error: README.md no ha sido modificado." && exit 1
+          fi
+
+      - name: Verificar que se ha creado la carpeta minecraft-server
+        run: |
+          if [ -d "minecraft-server" ]; then
+            echo "La carpeta minecraft-server existe."
+          else
+            echo "Error: La carpeta minecraft-server no existe." && exit 1
+          fi
+
+      - name: Final CI Check - Concluir si todo está bien
+        run: echo "CI válido. El PR puede ser revisado."

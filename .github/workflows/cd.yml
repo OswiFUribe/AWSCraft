@@ -1,0 +1,26 @@
+name: CD - Empaque y Subida de Artifact
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Empacar el código en un archivo tar.gz
+        run: |
+          timestamp=$(date +%Y%m%d%H%M%S)
+          tar -czf lab-to-cloud-${timestamp}.tar.gz README.md setup minecraft-server
+          echo "Archivo empaquetado como lab-to-cloud-${timestamp}.tar.gz"
+
+      - name: Subir Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lab-to-cloud-package
+          path: lab-to-cloud-*.tar.gz
