@@ -18,8 +18,8 @@ echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bash_profile
 
 # 4. Crear la carpeta para Minecraft y entrar en ella
 echo "[INFO] Creando carpeta ~/minecraft-server"
-mkdir -p ~/minecraft-server
-cd ~/minecraft-server
+mkdir -p minecraft-server/
+cd minecraft-server/
 
 # 5. Descargar Fabric server installer (versión 1.21.1 como ejemplo)
 echo "[INFO] Descargando Fabric..."
@@ -33,8 +33,6 @@ echo "eula=true" > eula.txt
 echo "[INFO] Creando script para ejecutar el servidor..."
 cat > run.sh <<'EOF'
 #!/usr/bin/env bash
-export JAVA_HOME=/opt/jdk-21.0.0+35
-export PATH=$JAVA_HOME/bin:$PATH
 java -Xmx2G -Xms1G -jar fabric-server-launch.jar nogui
 EOF
 chmod +x run.sh
@@ -44,6 +42,6 @@ echo "[INFO] Limpiando archivos temporales..."
 rm -f OpenJDK21U-jdk_x64_linux_hotspot_21_35.tar.gz
 
 echo "[INFO] Instalación completa."
-echo "Usa './run.sh' dentro de ~/minecraft-server para iniciar el servidor."
+echo "Usa './run.sh' dentro de minecraft-server/ para iniciar el servidor."
 
 source ~/.bash_profile
