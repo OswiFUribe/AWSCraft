@@ -16,14 +16,7 @@ Para este taller, necesitas:
 
 ### Pasos de Instalación y Configuración
 
-1. **Clonar el repositorio**  
-Clona el repositorio en tu instancia EC2 o máquina local:
-```bash
-git clone https://github.com/OswiFUribe/AWSCraft
-cd AWSCraft
-```
-
-2. **Configurar la instancia EC2**  
+1. **Configurar la instancia EC2**  
 #### Seleccionar una instancia EC2
 
 Cuando crees una instancia EC2 en AWS, elige el tipo de instancia que mejor se ajuste a tus necesidades. Aquí tienes una guía rápida para seleccionar la instancia adecuada para este taller, considerando tamaño, precio y uso de recursos.
@@ -76,6 +69,12 @@ Pasos para asignar una Elastic IP:
 
 Para obtener más información sobre Elastic IPs, consulta la [documentación de AWS sobre Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html).
 
+2. **Clonar el repositorio**  
+Clona el repositorio en tu instancia EC2 o máquina local:
+```bash
+git clone https://github.com/OswiFUribe/AWSCraft
+cd AWSCraft
+```
 
 3. **Ejecutar el script `install_minecraft.sh`**  
 Una vez que tengas la instancia EC2 funcionando, ejecuta el siguiente script para instalar Java 21 y Fabric:
