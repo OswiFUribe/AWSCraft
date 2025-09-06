@@ -13,8 +13,8 @@ sudo mv jdk-21+35 /opt/
 
 # 3. Configurar las variables de entorno para Java 21
 echo "[INFO] Configurando JAVA_HOME y PATH..."
-echo "export JAVA_HOME=/opt/jdk-21+35" >> ~/.bash_profile
-echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bash_profile
+echo "export JAVA_HOME=/opt/jdk-21+35" >> ~/.bashrc
+echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
 
 # 4. Limpieza
 echo "[INFO] Limpiando archivos temporales..."
@@ -46,4 +46,4 @@ chmod +x run.sh
 echo "[INFO] Instalación completa."
 echo "Usa './run.sh' dentro de minecraft-server/ para iniciar el servidor."
 
-source ~/.bash_profile
+source ~/.bashrc
